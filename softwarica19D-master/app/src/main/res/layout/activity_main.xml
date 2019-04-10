@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#efefef">
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Linear Layout"
+       android:id="@+id/btn_linear_layout"
+       android:background="#3F51B5"
+       android:textColor="#fff"/>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Login Form"
+       android:id="@+id/btn_login_form"
+       android:background="#3F51B5"
+       android:textColor="#fff"
+       android:layout_marginTop="16dp"/>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Calculator with toast"
+       android:id="@+id/btn_calculator"
+       android:background="#3F51B5"
+       android:textColor="#fff"
+       android:layout_marginTop="16dp"/>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Activity Lifecycle"
+       android:id="@+id/btn_activity_life_cycle"
+       android:background="#3F51B5"
+       android:textColor="#fff"
+       android:layout_marginTop="16dp"/>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Signup form"
+       android:id="@+id/btn_signup_form"
+       android:background="#3F51B5"
+       android:textColor="#fff"
+       android:layout_marginTop="16dp"/>
+
+</LinearLayout>

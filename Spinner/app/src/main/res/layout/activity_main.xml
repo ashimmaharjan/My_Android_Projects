@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/sp_country"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:entries="@array/country">
+    </Spinner>
+    <RelativeLayout
+        android:layout_below="@+id/sp_country"
+        android:id="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#FF3D00">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/display_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            style="@style/mytextStyle"
+            android:layout_toRightOf="@+id/image"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/display_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abc@xyz.com"
+            android:textSize="20dp"
+            android:layout_below="@+id/display_message"
+            android:layout_toRightOf="@+id/image"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffff"/>
+        <TextView
+            android:id="@+id/contact_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="98000000"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/image"
+            android:layout_below="@+id/display_email"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffff"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

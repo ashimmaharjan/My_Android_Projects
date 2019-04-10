@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Spinner</string>
+
+    <array name="country">
+        <item>Nepal</item>
+        <item>India</item>
+        <item>China</item>
+        <item>Bhutan</item>
+    </array>
+
+    //frequently used items are stored here and then called in the required xml files.
+</resources>

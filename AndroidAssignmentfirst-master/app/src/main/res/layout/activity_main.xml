@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI CALCULATOR!"
+        android:id="@+id/bmicalculator"
+        android:layout_margin="20dp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DIGIT WORD CONVERTER"
+        android:id="@+id/digitwordconverter"
+        android:layout_below="@id/bmicalculator"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAX CALCULATOR"
+        android:id="@+id/taxcalculator"
+        android:layout_below="@id/digitwordconverter"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAR INFO"
+        android:id="@+id/car"
+        android:layout_below="@id/taxcalculator"
+        android:layout_margin="20dp"
+        />
+
+
+
+</RelativeLayout>

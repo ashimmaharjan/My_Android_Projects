@@ -12,9 +12,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     EditText weight,height;
     TextView displayResult;
-    TextView displayMessage;
     Button calculateBMI;
     Float userWeight,userHeight,BMI;
+    UserValues userValues=new UserValues();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,17 +23,18 @@ public class MainActivity extends AppCompatActivity {
         weight=findViewById(R.id.inputweight);
         height=findViewById(R.id.inputheight);
         displayResult=findViewById(R.id.displayresult);
-        displayMessage=findViewById(R.id.displaymsg);
         calculateBMI=findViewById(R.id.calculate);
 
         calculateBMI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                userValues.setWeightUser(weight.getText().toString());
+                userValues.setHeightUser(height.getText().toString());
                 userWeight=Float.parseFloat(weight.getText().toString());
                 userHeight=Float.parseFloat(height.getText().toString());
                 userHeight=userHeight/100;
-                BMI=userWeight/(userHeight*2);
+                BMI=userWeight/(userHeight*userHeight);
                 displayResult.setText(BMI.toString());
 
                 if(BMI<18.5)

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarAdd"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type and Run "
+        android:textSize="30dp"
+        android:id="@+id/top"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make:"
+        android:layout_below="@id/top"
+        android:textSize="20dp"
+        android:id="@+id/tv_make"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:layout_below="@id/tv_make"
+        android:id="@+id/et_make"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Year:"
+        android:textSize="20dp"
+        android:layout_below="@id/et_make"
+        android:id="@+id/tv_year"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_year"
+        android:layout_below="@id/tv_year"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color:"
+        android:textSize="20dp"
+        android:layout_below="@id/et_year"
+        android:id="@+id/tv_color"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_color"
+        android:layout_below="@id/tv_color"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purchase:"
+        android:textSize="20dp"
+        android:layout_below="@id/et_color"
+        android:id="@+id/tv_purchase"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_purchase"
+        android:layout_below="@id/tv_purchase"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Engine size(litre):"
+        android:textSize="20dp"
+        android:layout_below="@id/et_purchase"
+        android:id="@+id/tv_engine"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_engine"
+        android:layout_below="@id/tv_engine"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE CAR"
+        android:id="@+id/btn_createcar"
+        android:layout_below="@id/et_engine"
+        android:layout_marginLeft="60dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE DIESEL"
+        android:id="@+id/btn_creatediesel"
+        android:layout_below="@id/et_engine"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/btn_createcar"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/tv_resultmake"-->
+            <!--android:layout_below="@+id/btn_createcar"-->
+            <!--android:textSize="20dp"-->
+            <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_resultyear"-->
+        <!--android:layout_below="@+id/tv_resultmake"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_resultcolor"-->
+        <!--android:layout_below="@+id/tv_resultyear"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_resultpurchase"-->
+        <!--android:layout_below="@+id/tv_resultcolor"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_resultengine"-->
+        <!--android:layout_below="@+id/tv_resultpurchase"-->
+        <!--android:textSize="20dp" />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_createcar"
+
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display"
+        android:textColor="@android:color/black"/>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

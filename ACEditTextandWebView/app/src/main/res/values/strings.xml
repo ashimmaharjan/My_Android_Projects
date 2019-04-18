@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ACEditTextandWebView</string>
+
+    <string-array name="urls">
+
+        <item>www.facebook.com</item>
+        <item>www.google.com</item>
+        <item>www.youtube.com</item>
+    </string-array>
+</resources>

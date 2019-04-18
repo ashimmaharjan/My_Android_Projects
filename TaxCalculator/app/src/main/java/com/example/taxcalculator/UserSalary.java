@@ -5,6 +5,9 @@ public class UserSalary {
 
     public String getUserSalary() {
         return userSalary;
+
+
+
     }
 
     public void setUserSalary(String userSalary) {

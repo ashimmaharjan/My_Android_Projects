@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web View and Autocomplete Edittext"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/inputURL"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter URL"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO!!"
+        android:layout_toRightOf="@+id/inputURL"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="35dp"/>
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:layout_below="@+id/inputURL"/>
+
+    <Button
+        android:id="@+id/gg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="google"
+        android:layout_below="@id/inputURL"
+        android:layout_toRightOf="@+id/fb"
+        android:layout_marginLeft="70dp"/>
+
+    <Button
+        android:id="@+id/yt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yoututbe"
+        android:layout_below="@id/inputURL"
+        android:layout_toRightOf="@+id/gg"
+        android:layout_marginLeft="60dp"/>
+
+    <WebView
+        android:id="@+id/WV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fb"
+        android:layout_marginTop="10dp">
+    </WebView>
+
+</RelativeLayout>

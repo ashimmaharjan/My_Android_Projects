@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please input the car details"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#070707"
+        android:layout_marginTop="10dp"
+        android:background="#03FFD6"/>
+
+    <TextView
+        android:id="@+id/txtCName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textViewStyle"
+        android:text="Name of car:"
+        android:layout_below="@+id/top"/>
+
+    <EditText
+        android:id="@+id/inputCName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCName"
+        android:hint="Enter car name"
+        style="@style/editTextStyle"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textViewStyle"
+        android:text="Year of Manufacture:"
+        android:layout_below="@+id/inputCName"/>
+
+    <EditText
+        android:id="@+id/inputYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtYear"
+        android:hint="Enter manufactured year"
+        style="@style/editTextStyle"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/txtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textViewStyle"
+        android:text="Colour:"
+        android:layout_below="@+id/inputYear" />
+
+    <EditText
+        android:id="@+id/inputColour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter colour of car"
+        style="@style/editTextStyle"
+        android:layout_below="@+id/txtColor"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchased Price (Rs.)"
+        style="@style/textViewStyle"
+        android:layout_below="@+id/inputColour"/>
+
+    <EditText
+        android:id="@+id/inputPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter purchased price"
+        android:layout_below="@+id/txtPrice"
+        style="@style/editTextStyle"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtEngine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textViewStyle"
+        android:text="Engine Size (Ltrs.)"
+        android:layout_below="@+id/inputPrice"/>
+
+    <EditText
+        android:id="@+id/inputEngine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter engine size"
+        android:layout_below="@+id/txtEngine"
+        style="@style/editTextStyle"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/addCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputEngine"
+        android:text="ADD CAR"
+        android:textSize="25sp"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addCar">
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            style="@style/outputStyle" />
+
+    </ScrollView>
+</RelativeLayout>

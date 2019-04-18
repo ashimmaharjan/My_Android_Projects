@@ -52,4 +52,20 @@
         android:layout_marginTop="20dp"
         android:textAlignment="center"/>
 
+   <AutoCompleteTextView
+       android:id="@+id/ACeditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/calculateTax"
+       android:layout_marginTop="10dp"
+       android:hint="Enter your country name"
+       android:textStyle="italic"
+       android:textSize="20dp"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </WebView>
 </RelativeLayout>

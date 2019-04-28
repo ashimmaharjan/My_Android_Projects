@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (TextUtils.isEmpty(Pwd.getText().toString())) {
                     Pwd.setError("Enter password");
                     Pwd.findFocus();
+
                     return false;
                 }
                 return true;

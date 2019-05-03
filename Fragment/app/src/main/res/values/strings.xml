@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fragment</string>
+    <string name="load_fragment_1">Load fragment 1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment 2</string>
+    <string name="this_is_fragment_1">This is fragment 1</string>
+    <string name="enter_radius_of_circle">Enter radius of circle</string>
+</resources>

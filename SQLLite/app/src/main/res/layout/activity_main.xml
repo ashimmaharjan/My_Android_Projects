@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/inputWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter word"
+        android:textSize="25sp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/inputMeaning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter Meaning"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/inputWord" />
+
+    <Button
+        android:id="@+id/addWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Word"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/viewWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Existing Words"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/addWord"/>
+
+</RelativeLayout>

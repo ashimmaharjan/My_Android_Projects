@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentAddForm"
+    android:background="#8BC34A">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:text="Student Form"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student ID: "
+        style="@style/textViews"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/inputID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        style="@style/editTexts"
+        android:hint="Enter ID"
+        android:layout_below="@id/txtID"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textViews"
+        android:layout_below="@+id/inputID"
+        android:text="Student Name:" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editTexts"
+        android:hint="Enter name"
+        android:layout_below="@+id/txtName"/>
+
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textViews"
+        android:text="Phone Number: "
+        android:layout_below="@+id/inputName"/>
+
+    <EditText
+        android:id="@+id/inputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editTexts"
+        android:hint="Enter phone Number"
+        android:layout_below="@+id/txtPhone"
+        android:inputType="phone"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textViews"
+        android:text="Email:"
+        android:layout_below="@+id/inputPhone"/>
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:hint="Enter email"
+        style="@style/editTexts"/>
+
+    <TextView
+        android:id="@+id/txtImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textViews"
+        android:layout_below="@+id/inputEmail"
+        android:text="Image:"/>
+
+    <EditText
+        android:id="@+id/inputImgae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtImage"
+        android:hint="Please choose an image"
+        style="@style/editTexts" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
